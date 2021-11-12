@@ -5,6 +5,8 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { PaginasModule } from './paginas/paginas.module';
+import { BarraLateralModule } from './paginas/barra-lateral/barra-lateral.module';
+import { MaterialSistemaDeCadastro } from 'src/material.module';
 
 @NgModule({
   declarations: [
@@ -12,8 +14,10 @@ import { PaginasModule } from './paginas/paginas.module';
   ],
   imports: [
     BrowserModule,
+    MaterialSistemaDeCadastro,
     AppRoutingModule,
     PaginasModule,
+    BarraLateralModule,
     BrowserAnimationsModule
   ],
   providers: [],

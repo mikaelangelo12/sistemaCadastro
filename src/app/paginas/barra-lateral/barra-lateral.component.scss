@@ -1,6 +1,13 @@
+.containerConteudo{
+  display: flex;
+}
 .containerBarra{
   width: 250px;
   height: 699px;
   color: #fff;
   background-color: var(--color2);
+}
+.containerCadastroInput{
+  display: flex;
+  flex-direction: column;
 }

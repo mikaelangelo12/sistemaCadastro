@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-barra-lateral',
@@ -7,9 +8,14 @@ import { Component, OnInit } from '@angular/core';
 })
 export class BarraLateralComponent implements OnInit {
 
-  constructor() { }
+  menuCadastro = "Cadastro"
+  constructor(private router: Router) { }
 
   ngOnInit(): void {
+    this.conteudoCadastro()
+  }
+  conteudoCadastro(){
+    this.router.navigate(['cadastro'])
   }
 
 }
